@@ -49,7 +49,6 @@ secrets here.
 
 ```
 src/
-├── assets/projects/<slug>/   # real screenshots go here (see below)
 ├── components/
 │   ├── layout/                # Navbar, Footer, Layout
 │   ├── project/                # ProjectCard, ProjectGallery, ProjectLightbox, ProjectPreview
@@ -63,15 +62,20 @@ src/
 ├── config/site.ts             # single source of truth for name/email/phone/social links
 ├── hooks/
 └── lib/                       # utils, whatsapp.ts, contact.ts, contact-schema.ts
+
+public/
+└── projects/<slug>/           # real screenshots go here (see below)
 ```
 
 ## Adding a Project
 
 No UI changes required — everything is data-driven from `src/data/projects.ts`:
 
-1. Add screenshots to `src/assets/projects/<slug>/` (or anywhere under `src/assets`) and reference
-   them from the project's `screenshots` array. Until screenshots exist, the UI shows a clearly
-   labeled placeholder instead of a fabricated image.
+1. Every project's `screenshots` array in `src/data/projects.ts` already points at
+   `/projects/<slug>/<NN-name>.webp`. Drop the matching real screenshot file into
+   `public/projects/<slug>/` and it appears automatically — no code change needed. A screenshot
+   that hasn't been added yet 404s gracefully: the gallery/preview/lightbox show a clearly
+   labeled "coming soon" placeholder for that image instead of a broken image or fabricated one.
 2. Add a new entry to the `projects` array with `slug`, `title`, `category`, `tags` (for
    filtering), `description`, `detailedDescription`, `role`, `problem`, `solution`,
    `technicalHighlights`, `technologies`, `features`, and optional `liveUrl`/`githubUrl`.

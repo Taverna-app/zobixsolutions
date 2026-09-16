@@ -1,6 +1,7 @@
 import type { Project } from "@/data/projects";
 import { cn } from "@/lib/utils";
 import { LayoutDashboard } from "lucide-react";
+import { useState } from "react";
 
 interface ProjectPreviewProps {
   project: Project;
@@ -9,19 +10,21 @@ interface ProjectPreviewProps {
 
 /**
  * Renders the project's first screenshot when available. Real screenshots are
- * dropped into src/assets/projects/<slug>/ later — until then this shows a
- * clearly-labeled placeholder instead of a fabricated image.
+ * dropped into public/projects/<slug>/ later — until a given file exists this
+ * falls back to a clearly-labeled placeholder instead of a broken image.
  */
 function ProjectPreview({ project, className }: ProjectPreviewProps) {
+  const [failed, setFailed] = useState(false);
   const screenshot = project.screenshots[0];
 
-  if (screenshot) {
+  if (screenshot && !failed) {
     return (
       <div className={cn("relative overflow-hidden bg-surface-2", className)}>
         <img
           src={screenshot.src}
           alt={screenshot.title}
           loading="lazy"
+          onError={() => setFailed(true)}
           className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
       </div>

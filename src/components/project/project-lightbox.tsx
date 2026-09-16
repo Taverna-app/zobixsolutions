@@ -2,8 +2,8 @@ import { useKeyPress } from "@/hooks/use-key-press";
 import { useScrollLock } from "@/hooks/use-scroll-lock";
 import type { ProjectScreenshot } from "@/data/projects";
 import { AnimatePresence, motion } from "framer-motion";
-import { ChevronLeft, ChevronRight, X } from "lucide-react";
-import { useCallback } from "react";
+import { ChevronLeft, ChevronRight, ImageOff, X } from "lucide-react";
+import { useCallback, useState } from "react";
 import { createPortal } from "react-dom";
 
 interface ProjectLightboxProps {
@@ -16,6 +16,8 @@ interface ProjectLightboxProps {
 function ProjectLightbox({ screenshots, index, onClose, onIndexChange }: ProjectLightboxProps) {
   const open = index >= 0;
   const current = open ? screenshots[index] : undefined;
+  const [failedSrcs, setFailedSrcs] = useState<Set<string>>(new Set());
+  const currentFailed = current ? failedSrcs.has(current.src) : false;
 
   const goNext = useCallback(() => {
     onIndexChange((index + 1) % screenshots.length);
@@ -69,14 +71,27 @@ function ProjectLightbox({ screenshots, index, onClose, onIndexChange }: Project
               </button>
             )}
 
-            <motion.img
-              key={current.src}
-              initial={{ opacity: 0, scale: 0.98 }}
-              animate={{ opacity: 1, scale: 1 }}
-              src={current.src}
-              alt={current.title}
-              className="max-h-full max-w-full rounded-lg object-contain"
-            />
+            {currentFailed ? (
+              <div className="flex flex-col items-center gap-3 text-center text-white/70">
+                <ImageOff className="size-8" />
+                <p className="font-mono text-sm">Screenshot coming soon</p>
+              </div>
+            ) : (
+              <motion.img
+                key={current.src}
+                initial={{ opacity: 0, scale: 0.98 }}
+                animate={{ opacity: 1, scale: 1 }}
+                src={current.src}
+                alt={current.title}
+                onError={() =>
+                  setFailedSrcs((prev) => {
+                    if (prev.has(current.src)) return prev;
+                    return new Set(prev).add(current.src);
+                  })
+                }
+                className="max-h-full max-w-full rounded-lg object-contain"
+              />
+            )}
 
             {screenshots.length > 1 && (
               <button
