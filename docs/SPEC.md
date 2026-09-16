@@ -407,8 +407,8 @@ export const siteConfig = {
   brand: "Zobix Solutions",
   brandDescription: "Custom Software & Digital Solutions",
   email: "ranadeveloperoffical@gmail.com",
-  phone: "+923162380303",
-  whatsapp: "+923162380303",
+  phone: "+923308972805",
+  whatsapp: "+923308972805",
   secondaryWhatsapp: "+923308972805",
   location: "Karachi, Pakistan",
 };
@@ -1473,7 +1473,7 @@ Do NOT use aggressive sales language.
 
 Primary WhatsApp number:
 
-+923162380303
++923308972805
 
 Create WhatsApp URL programmatically.
 

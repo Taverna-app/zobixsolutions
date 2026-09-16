@@ -5,9 +5,9 @@ export const siteConfig = {
   brandDescription: "Custom Software & Digital Solutions",
   tagline: "Software That Solves Real Business Problems.",
   email: "ranadeveloperoffical@gmail.com",
-  phone: "+923162380303",
+  phone: "+923308972805",
   phoneDisplay: "+92 316 2380303",
-  whatsapp: "+923162380303",
+  whatsapp: "+923308972805",
   secondaryWhatsapp: "+923308972805",
   location: "Karachi, Pakistan",
   // NOTE: zobixsolutions.com is not yet connected/resolving (DNS not found as of
