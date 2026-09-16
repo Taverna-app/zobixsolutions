@@ -1,17 +1,35 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { contactSchema } from "../src/lib/contact-schema";
+import { z } from "zod";
 
 const TO_EMAIL = "ranadeveloperoffical@gmail.com";
 
-async function sendContactEmail(data: {
-  name: string;
-  email: string;
-  phone?: string;
-  company?: string;
-  projectType: string;
-  budget?: string;
-  message: string;
-}) {
+// Kept self-contained (no imports from ../src) so Vercel's function bundler
+// never has to trace a relative path outside the api/ directory.
+const projectTypes = [
+  "Website",
+  "E-commerce",
+  "POS",
+  "Business Software",
+  "SaaS",
+  "Mobile App",
+  "AI Application",
+  "Custom Software",
+  "Other",
+] as const;
+
+const contactSchema = z.object({
+  name: z.string().trim().min(2),
+  email: z.string().trim().email(),
+  phone: z.string().trim().optional().or(z.literal("")),
+  company: z.string().trim().optional().or(z.literal("")),
+  projectType: z.enum(projectTypes),
+  budget: z.string().trim().optional().or(z.literal("")),
+  message: z.string().trim().min(20),
+});
+
+type ContactData = z.infer<typeof contactSchema>;
+
+async function sendContactEmail(data: ContactData) {
   const { SMTP_HOST, SMTP_PORT, SMTP_SECURE, SMTP_USER, SMTP_PASSWORD, SMTP_FROM_NAME } = process.env;
 
   if (!SMTP_HOST || !SMTP_PORT || !SMTP_USER || !SMTP_PASSWORD) {
