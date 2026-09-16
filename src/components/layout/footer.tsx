@@ -25,8 +25,8 @@ function Footer() {
       <div className="mx-auto grid max-w-8xl gap-12 px-5 py-16 sm:px-8 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
           <div className="flex items-center gap-2">
-            <span className="flex size-9 items-center justify-center rounded-lg border border-border-strong bg-surface font-mono text-sm font-semibold text-accent">
-              Z
+            <span className="flex size-9 items-center justify-center rounded-lg border border-border-strong bg-surface">
+              <img src="/logo-icon.png" alt="" className="size-6 object-contain" />
             </span>
             <span className="font-mono text-sm font-semibold tracking-[0.2em] text-foreground">
               {siteConfig.brand.toUpperCase()}

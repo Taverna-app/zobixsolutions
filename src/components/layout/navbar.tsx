@@ -35,8 +35,8 @@ function Navbar() {
         )}
       >
         <Link to="/" className="group flex items-center gap-2" aria-label={`${siteConfig.name} — home`}>
-          <span className="flex size-9 items-center justify-center rounded-lg border border-border-strong bg-surface font-mono text-sm font-semibold text-accent transition-colors group-hover:border-accent/50">
-            Z
+          <span className="flex size-9 items-center justify-center rounded-lg border border-border-strong bg-surface transition-colors group-hover:border-accent/50">
+            <img src="/logo-icon.png" alt="" className="size-6 object-contain" />
           </span>
           <span className="font-mono text-sm font-semibold tracking-[0.2em] text-foreground">ZOBIX</span>
         </Link>
