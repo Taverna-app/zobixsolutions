@@ -6,7 +6,12 @@ import { Link } from "react-router-dom";
 function NotFound() {
   return (
     <div className="flex min-h-[70vh] flex-col items-center justify-center px-5 py-24 text-center">
-      <Seo title="Page Not Found" description="The page you're looking for doesn't exist or may have moved." path="/404" />
+      <Seo
+        title="Page Not Found"
+        description="The page you're looking for doesn't exist or may have moved."
+        path="/404"
+        noindex
+      />
 
       <span className="bg-gradient-to-br from-accent to-accent-2 bg-clip-text font-mono text-7xl font-semibold text-transparent sm:text-8xl">
         404

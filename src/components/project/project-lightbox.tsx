@@ -8,12 +8,13 @@ import { createPortal } from "react-dom";
 
 interface ProjectLightboxProps {
   screenshots: ProjectScreenshot[];
+  projectTitle: string;
   index: number;
   onClose: () => void;
   onIndexChange: (index: number) => void;
 }
 
-function ProjectLightbox({ screenshots, index, onClose, onIndexChange }: ProjectLightboxProps) {
+function ProjectLightbox({ screenshots, projectTitle, index, onClose, onIndexChange }: ProjectLightboxProps) {
   const open = index >= 0;
   const current = open ? screenshots[index] : undefined;
   const [failedSrcs, setFailedSrcs] = useState<Set<string>>(new Set());
@@ -82,7 +83,7 @@ function ProjectLightbox({ screenshots, index, onClose, onIndexChange }: Project
                 initial={{ opacity: 0, scale: 0.98 }}
                 animate={{ opacity: 1, scale: 1 }}
                 src={current.src}
-                alt={current.title}
+                alt={`${projectTitle} — ${current.title} screenshot`}
                 onError={() =>
                   setFailedSrcs((prev) => {
                     if (prev.has(current.src)) return prev;

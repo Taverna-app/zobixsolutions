@@ -6,6 +6,7 @@ interface SeoProps {
   description: string;
   path?: string;
   image?: string;
+  noindex?: boolean;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
@@ -29,7 +30,7 @@ function setLink(rel: string, href: string) {
   el.setAttribute("href", href);
 }
 
-export function Seo({ title, description, path = "", image, jsonLd }: SeoProps) {
+export function Seo({ title, description, path = "", image, noindex, jsonLd }: SeoProps) {
   useEffect(() => {
     const fullTitle = title.includes(siteConfig.name) ? title : `${title} | ${siteConfig.name}`;
     const url = `${siteConfig.url}${path}`;
@@ -38,6 +39,7 @@ export function Seo({ title, description, path = "", image, jsonLd }: SeoProps) 
     document.title = fullTitle;
 
     setMeta("name", "description", description);
+    setMeta("name", "robots", noindex ? "noindex, nofollow" : "index, follow");
     setLink("canonical", url);
 
     setMeta("property", "og:title", fullTitle);

@@ -22,7 +22,7 @@ function ProjectPreview({ project, className }: ProjectPreviewProps) {
       <div className={cn("relative overflow-hidden bg-surface-2", className)}>
         <img
           src={screenshot.src}
-          alt={screenshot.title}
+          alt={`${project.title} — ${screenshot.title} screenshot`}
           loading="lazy"
           onError={() => setFailed(true)}
           className="size-full object-cover transition-transform duration-500 group-hover:scale-105"

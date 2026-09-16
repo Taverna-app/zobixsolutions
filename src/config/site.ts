@@ -10,7 +10,11 @@ export const siteConfig = {
   whatsapp: "+923162380303",
   secondaryWhatsapp: "+923308972805",
   location: "Karachi, Pakistan",
-  url: "https://zobixsolutions.com",
+  // NOTE: zobixsolutions.com is not yet connected/resolving (DNS not found as of
+  // this writing). Using the live Vercel URL so canonical/OG/sitemap tags point
+  // somewhere real. Swap this back to the custom domain the moment it's live —
+  // it's the only place this needs to change.
+  url: "https://zobixsolutions.vercel.app",
   legalNotice:
     "Zobix Solutions is currently a software development brand/studio and is not a registered company.",
   social: {

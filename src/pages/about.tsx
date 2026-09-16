@@ -14,7 +14,7 @@ function AboutPage() {
         path="/about"
       />
 
-      <AboutSection />
+      <AboutSection headingLevel="h1" />
       <Skills />
 
       <section className="border-t border-border bg-surface/30 py-24 sm:py-28">

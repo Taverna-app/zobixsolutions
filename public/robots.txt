@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://zobixsolutions.com/sitemap.xml
+Sitemap: https://zobixsolutions.vercel.app/sitemap.xml

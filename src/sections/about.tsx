@@ -14,7 +14,13 @@ const focusAreas = [
   "Third-party integrations",
 ];
 
-function About() {
+interface AboutProps {
+  headingLevel?: "h1" | "h2";
+}
+
+function About({ headingLevel = "h2" }: AboutProps) {
+  const Heading = headingLevel;
+
   return (
     <section id="about" className="py-24 sm:py-28">
       <div className="mx-auto max-w-8xl px-5 sm:px-8">
@@ -26,9 +32,9 @@ function About() {
             transition={{ duration: 0.5 }}
           >
             <span className="font-mono text-xs tracking-[0.18em] text-accent">ABOUT</span>
-            <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight sm:text-4xl">
+            <Heading className="mt-3 text-balance text-3xl font-semibold tracking-tight sm:text-4xl">
               Engineering Products, Not Just Pages.
-            </h2>
+            </Heading>
           </motion.div>
 
           <motion.div

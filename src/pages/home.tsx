@@ -1,5 +1,6 @@
 import { Seo } from "@/components/seo/seo";
 import { siteConfig } from "@/config/site";
+import { skillGroups } from "@/data/skills";
 import { About } from "@/sections/about";
 import { Contact } from "@/sections/contact";
 import { CTA } from "@/sections/cta";
@@ -33,6 +34,11 @@ function Home() {
               addressLocality: "Karachi",
               addressCountry: "PK",
             },
+            worksFor: {
+              "@type": "Organization",
+              name: siteConfig.brand,
+            },
+            knowsAbout: skillGroups.flatMap((group) => group.skills.map((skill) => skill.name)),
             sameAs: Object.values(siteConfig.social),
           },
           {
@@ -40,6 +46,23 @@ function Home() {
             "@type": "WebSite",
             name: siteConfig.name,
             url: siteConfig.url,
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: siteConfig.brand,
+            description: siteConfig.brandDescription,
+            url: siteConfig.url,
+            founder: {
+              "@type": "Person",
+              name: siteConfig.name,
+            },
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Karachi",
+              addressCountry: "PK",
+            },
+            sameAs: Object.values(siteConfig.social),
           },
         ]}
       />

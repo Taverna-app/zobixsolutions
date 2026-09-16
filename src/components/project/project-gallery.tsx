@@ -60,7 +60,7 @@ function ProjectGallery({ screenshots, projectTitle }: ProjectGalleryProps) {
             >
               <img
                 src={screenshot.src}
-                alt={screenshot.title}
+                alt={`${projectTitle} — ${screenshot.title} screenshot`}
                 loading="lazy"
                 onError={() => markFailed(screenshot.src)}
                 className="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -78,6 +78,7 @@ function ProjectGallery({ screenshots, projectTitle }: ProjectGalleryProps) {
 
       <ProjectLightbox
         screenshots={screenshots}
+        projectTitle={projectTitle}
         index={activeIndex}
         onClose={() => setActiveIndex(-1)}
         onIndexChange={setActiveIndex}
