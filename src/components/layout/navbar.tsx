@@ -38,7 +38,7 @@ function Navbar() {
           <span className="flex size-9 items-center justify-center rounded-lg border border-border-strong bg-surface transition-colors group-hover:border-accent/50">
             <img src="/logo-icon.png" alt="" className="size-6 object-contain" />
           </span>
-          <span className="font-mono text-sm font-semibold tracking-[0.2em] text-foreground">ZOBIX</span>
+          <span className="font-mono text-sm font-semibold tracking-[0.2em] text-foreground">ZOBIX SOLUTIONS</span>
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex">
