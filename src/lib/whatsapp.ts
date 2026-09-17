@@ -2,7 +2,7 @@ import { siteConfig } from "@/config/site";
 
 export function createWhatsAppLink(message?: string, number: string = siteConfig.whatsapp) {
   const digits = number.replace(/[^\d]/g, "");
-  const text = message ?? "Hi Zohaib, I visited your portfolio and would like to discuss a software project.";
+  const text = message ?? "Hi Zobix Solutions, I would like to discuss a software project.";
   return `https://wa.me/${digits}?text=${encodeURIComponent(text)}`;
 }
 

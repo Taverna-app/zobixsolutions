@@ -1,12 +1,10 @@
 import {
-  AppWindow,
-  Bot,
   Building2,
-  Cloud,
-  Radio,
+  Plug,
   Server,
   ShoppingCart,
-  Smartphone,
+  Store,
+  Workflow,
   type LucideIcon,
 } from "lucide-react";
 
@@ -19,51 +17,43 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    title: "Custom Web Applications",
-    description: "Business-focused web applications built around specific workflows, not generic templates.",
-    technologies: ["React", "Node.js", "TypeScript", "MySQL"],
-    icon: AppWindow,
-  },
-  {
-    title: "SaaS Platforms",
-    description: "Multi-tenant applications, subscription systems, dashboards and role-based workflows.",
-    technologies: ["Node.js", "Stripe", "JWT", "RBAC"],
-    icon: Cloud,
-  },
-  {
-    title: "Business Management Software",
-    description: "POS, inventory, sales, reporting, customer, supplier and operational systems.",
-    technologies: ["MySQL", "Sequelize", "React", "Express.js"],
+    title: "Custom Business Software",
+    description:
+      "Software built around your exact workflow — management systems, internal tools and business dashboards, not generic templates.",
+    technologies: ["React", "Node.js", "MySQL", "TypeScript"],
     icon: Building2,
   },
   {
-    title: "E-commerce",
-    description: "Custom online stores with product management, checkout and order workflows.",
-    technologies: ["React", "MongoDB", "Stripe", "TanStack"],
+    title: "E-Commerce Development",
+    description:
+      "Custom online stores designed for your products, customers and operations — product management, cart, checkout and order tracking.",
+    technologies: ["React", "MongoDB", "TanStack", "ImageKit"],
     icon: ShoppingCart,
   },
   {
-    title: "Mobile Applications",
-    description: "Cross-platform React Native applications for iOS and Android.",
-    technologies: ["React Native", "REST APIs", "Push Notifications"],
-    icon: Smartphone,
+    title: "POS & Inventory",
+    description:
+      "Manage billing, stock, purchases, customers, suppliers and profit — retail, wholesale and multi-store — from one system.",
+    technologies: ["MySQL", "Sequelize", "React", "Barcode"],
+    icon: Store,
   },
   {
-    title: "Real-Time Applications",
-    description: "Chat, notifications, presence, audio/video communication and live updates.",
-    technologies: ["Socket.IO", "WebRTC", "WebSockets"],
-    icon: Radio,
+    title: "Business Automation",
+    description:
+      "Replace repetitive manual processes with software-driven workflows, reporting and role-based access.",
+    technologies: ["Node.js", "Express.js", "REST APIs"],
+    icon: Workflow,
   },
   {
-    title: "AI-Powered Software",
-    description: "AI evaluation, scoring, transcription and intelligent workflows.",
-    technologies: ["OpenAI", "Groq", "Node.js"],
-    icon: Bot,
-  },
-  {
-    title: "API & Backend Engineering",
-    description: "Secure REST APIs, authentication, authorization, database architecture and integrations.",
-    technologies: ["Node.js", "Express.js", "JWT", "PostgreSQL"],
+    title: "Web Development",
+    description: "Fast, responsive and professional websites designed around your business goals.",
+    technologies: ["React", "Vite", "Tailwind CSS"],
     icon: Server,
+  },
+  {
+    title: "Software Integration",
+    description: "Connect your existing tools, APIs, payments and business systems into one workflow.",
+    technologies: ["Stripe", "Twilio", "Webhooks", "REST APIs"],
+    icon: Plug,
   },
 ];

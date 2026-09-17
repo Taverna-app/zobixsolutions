@@ -28,7 +28,7 @@ function Contact({ showHeading = true }: ContactProps) {
               </>
             )}
             <p className="mt-4 max-w-sm text-muted-foreground">
-              Fill out the form or reach out directly — I typically respond within a day.
+              Fill out the form or reach out directly — we typically respond within a day.
             </p>
 
             <div className="mt-8 space-y-4">
@@ -51,6 +51,17 @@ function Contact({ showHeading = true }: ContactProps) {
                   <MessageCircle className="size-4 text-accent" />
                 </span>
                 {siteConfig.phoneDisplay}
+              </a>
+              <a
+                href={createWhatsAppLink(undefined, siteConfig.secondaryWhatsapp)}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-3 text-sm text-foreground transition-colors hover:text-accent"
+              >
+                <span className="flex size-10 items-center justify-center rounded-lg border border-border-strong bg-surface-2">
+                  <MessageCircle className="size-4 text-accent" />
+                </span>
+                {siteConfig.secondaryWhatsappDisplay}
               </a>
               <div className="flex items-center gap-3 text-sm text-foreground">
                 <span className="flex size-10 items-center justify-center rounded-lg border border-border-strong bg-surface-2">

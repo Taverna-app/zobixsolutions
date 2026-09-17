@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const techBadges = ["Node.js", "React", "MySQL", "Socket.IO", "Stripe", "OpenAI"];
+const techBadges = ["React", "Node.js", "MySQL", "MongoDB", "Stripe", "React Native"];
 
 function Hero() {
   return (
@@ -23,19 +23,19 @@ function Hero() {
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             <span className="inline-flex items-center rounded-full border border-border-strong bg-surface px-4 py-1.5 font-mono text-xs tracking-[0.18em] text-muted-foreground">
-              SOFTWARE ENGINEER • FULL-STACK • PRODUCT BUILDER
+              SOFTWARE ENGINEERING FOR GROWING BUSINESSES
             </span>
 
             <h1 className="mt-6 text-balance text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
-              Software That Solves{" "}
+              Software That Works{" "}
               <span className="bg-gradient-to-br from-accent to-accent-2 bg-clip-text text-transparent">
-                Real Business Problems.
+                Around Your Business.
               </span>
             </h1>
 
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              Hi, I'm Zohaib Rana — a Software Engineer specializing in scalable web applications, SaaS
-              platforms, business management systems, e-commerce, real-time applications and mobile products.
+              Zobix Solutions builds custom websites, e-commerce platforms, POS systems and business software
+              designed around how your business actually works — not a generic template.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-3">
@@ -46,7 +46,7 @@ function Hero() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link to="/projects">View My Work</Link>
+                <Link to="/projects">View Our Work</Link>
               </Button>
             </div>
 
@@ -57,7 +57,7 @@ function Hero() {
               className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-accent"
             >
               <MessageCircle className="size-4" />
-              Let's Talk on WhatsApp
+              Chat on WhatsApp
             </a>
           </motion.div>
 
@@ -72,20 +72,20 @@ function Hero() {
                 <span className="size-2.5 rounded-full bg-[#ff5f56]" />
                 <span className="size-2.5 rounded-full bg-[#ffbd2e]" />
                 <span className="size-2.5 rounded-full bg-[#27c93f]" />
-                <span className="ml-3 font-mono text-xs text-muted-foreground">engineer.ts</span>
+                <span className="ml-3 font-mono text-xs text-muted-foreground">zobix.config.ts</span>
               </div>
               <pre className="overflow-x-auto p-5 font-mono text-[13px] leading-relaxed text-muted-foreground">
                 <code>
-                  <span className="text-accent-2">const</span> engineer = {"{"}
-                  {"\n  "}name: <span className="text-accent">"Zohaib Rana"</span>,
-                  {"\n  "}role: <span className="text-accent">"Software Engineer"</span>,
+                  <span className="text-accent-2">const</span> zobix = {"{"}
+                  {"\n  "}name: <span className="text-accent">"Zobix Solutions"</span>,
+                  {"\n  "}location: <span className="text-accent">"Karachi, Pakistan"</span>,
                   {"\n  "}builds: [
-                  {"\n    "}<span className="text-accent">"SaaS platforms"</span>,
+                  {"\n    "}<span className="text-accent">"Business software"</span>,
                   {"\n    "}<span className="text-accent">"E-commerce"</span>,
-                  {"\n    "}<span className="text-accent">"POS systems"</span>,
-                  {"\n    "}<span className="text-accent">"Real-time apps"</span>,
+                  {"\n    "}<span className="text-accent">"POS & inventory"</span>,
+                  {"\n    "}<span className="text-accent">"Automation"</span>,
                   {"\n  "}],
-                  {"\n  "}status: <span className="text-accent">"Available for projects"</span>,
+                  {"\n  "}status: <span className="text-accent">"Accepting new projects"</span>,
                   {"\n"}{"}"};
                 </code>
               </pre>

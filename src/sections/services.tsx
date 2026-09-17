@@ -10,12 +10,12 @@ function Services() {
     <section id="services" className="border-t border-border bg-surface/30 py-24 sm:py-28">
       <div className="mx-auto max-w-8xl px-5 sm:px-8">
         <div className="max-w-2xl">
-          <span className="font-mono text-xs tracking-[0.18em] text-accent">WHAT I BUILD</span>
+          <span className="font-mono text-xs tracking-[0.18em] text-accent">SERVICES</span>
           <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight sm:text-4xl">
-            Engineering Across the Full Product Lifecycle.
+            Software Built Around How Your Business Works.
           </h2>
           <p className="mt-3 text-muted-foreground">
-            From backend architecture to polished frontend, here's what I typically build for clients.
+            From a business website to a full inventory system, here's what we build for clients.
           </p>
         </div>
 

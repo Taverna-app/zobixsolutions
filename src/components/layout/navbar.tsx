@@ -9,11 +9,10 @@ import { Link, NavLink } from "react-router-dom";
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
   { label: "Services", href: "/#services" },
-  { label: "Projects", href: "/projects" },
-  { label: "Experience", href: "/#experience" },
-  { label: "Skills", href: "/#skills" },
+  { label: "Work", href: "/projects" },
+  { label: "Process", href: "/#process" },
+  { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -34,7 +33,7 @@ function Navbar() {
           scrolled ? "h-16" : "h-20",
         )}
       >
-        <Link to="/" className="group flex items-center gap-2" aria-label={`${siteConfig.name} — home`}>
+        <Link to="/" className="group flex items-center gap-2" aria-label={`${siteConfig.brand} — home`}>
           <span className="flex size-9 items-center justify-center rounded-lg border border-border-strong bg-surface transition-colors group-hover:border-accent/50">
             <img src="/logo-icon.png" alt="" className="size-6 object-contain" />
           </span>

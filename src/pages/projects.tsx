@@ -17,7 +17,7 @@ function Projects() {
     <div className="pb-24 pt-36 sm:pt-44">
       <Seo
         title="Projects"
-        description="A collection of production applications built by Zohaib Rana — SaaS platforms, e-commerce, POS systems, real-time apps and AI-powered software."
+        description="A collection of production applications built by Zobix Solutions — business software, e-commerce, POS systems, real-time apps and AI-powered software."
         path="/projects"
       />
 

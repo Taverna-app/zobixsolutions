@@ -8,7 +8,7 @@ function Skills() {
         <div className="max-w-2xl">
           <span className="font-mono text-xs tracking-[0.18em] text-accent">TECHNICAL EXPERTISE</span>
           <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight sm:text-4xl">
-            Technologies I Use to Ship Real Products.
+            Technologies We Use to Build Real Products.
           </h2>
         </div>
 

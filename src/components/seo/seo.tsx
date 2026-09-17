@@ -32,7 +32,7 @@ function setLink(rel: string, href: string) {
 
 export function Seo({ title, description, path = "", image, noindex, jsonLd }: SeoProps) {
   useEffect(() => {
-    const fullTitle = title.includes(siteConfig.name) ? title : `${title} | ${siteConfig.name}`;
+    const fullTitle = title.includes(siteConfig.brand) ? title : `${title} | ${siteConfig.brand}`;
     const url = `${siteConfig.url}${path}`;
     const ogImage = image ?? `${siteConfig.url}/og-image.png`;
 
@@ -47,7 +47,7 @@ export function Seo({ title, description, path = "", image, noindex, jsonLd }: S
     setMeta("property", "og:url", url);
     setMeta("property", "og:type", "website");
     setMeta("property", "og:image", ogImage);
-    setMeta("property", "og:site_name", siteConfig.name);
+    setMeta("property", "og:site_name", siteConfig.brand);
 
     setMeta("name", "twitter:card", "summary_large_image");
     setMeta("name", "twitter:title", fullTitle);

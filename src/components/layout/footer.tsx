@@ -1,4 +1,4 @@
-import { FacebookIcon, InstagramIcon, LinkedInIcon } from "@/components/icons/social-icons";
+import { FacebookIcon, InstagramIcon, LinkedInIcon, TikTokIcon } from "@/components/icons/social-icons";
 import { siteConfig } from "@/config/site";
 import { createWhatsAppLink } from "@/lib/whatsapp";
 import { Mail, MapPin } from "lucide-react";
@@ -6,15 +6,24 @@ import { Link } from "react-router-dom";
 
 const navLinks = [
   { label: "Home", href: "/" },
+  { label: "Work", href: "/projects" },
   { label: "About", href: "/about" },
-  { label: "Projects", href: "/projects" },
   { label: "Contact", href: "/contact" },
+];
+
+const footerServices = [
+  "Custom Business Software",
+  "E-Commerce",
+  "POS & Inventory",
+  "Business Automation",
+  "Web Development",
 ];
 
 const socialLinks = [
   { label: "LinkedIn", href: siteConfig.social.linkedin, icon: LinkedInIcon },
   { label: "Instagram", href: siteConfig.social.instagram, icon: InstagramIcon },
   { label: "Facebook", href: siteConfig.social.facebook, icon: FacebookIcon },
+  { label: "TikTok", href: siteConfig.social.tiktok, icon: TikTokIcon },
 ];
 
 function Footer() {
@@ -22,7 +31,7 @@ function Footer() {
 
   return (
     <footer className="border-t border-border bg-surface/40">
-      <div className="mx-auto grid max-w-8xl gap-12 px-5 py-16 sm:px-8 md:grid-cols-[1.4fr_1fr_1fr]">
+      <div className="mx-auto grid max-w-8xl gap-12 px-5 py-16 sm:px-8 md:grid-cols-[1.2fr_0.8fr_0.8fr_1fr]">
         <div>
           <div className="flex items-center gap-2">
             <span className="flex size-9 items-center justify-center rounded-lg border border-border-strong bg-surface">
@@ -33,7 +42,7 @@ function Footer() {
             </span>
           </div>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
-            {siteConfig.brandDescription} — software development brand/studio founded by {siteConfig.name}.
+            {siteConfig.brandDescription} — a software development studio founded by {siteConfig.founder}.
           </p>
           <div className="mt-4 flex items-center gap-2 text-sm text-muted-foreground">
             <MapPin className="size-4 text-accent" />
@@ -49,6 +58,17 @@ function Footer() {
                 <Link to={link.href} className="text-sm text-muted-foreground transition-colors hover:text-foreground">
                   {link.label}
                 </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="text-sm font-semibold text-foreground">Services</h3>
+          <ul className="mt-4 space-y-2">
+            {footerServices.map((service) => (
+              <li key={service} className="text-sm text-muted-foreground">
+                {service}
               </li>
             ))}
           </ul>
@@ -79,6 +99,19 @@ function Footer() {
                 {siteConfig.phoneDisplay}
               </a>
             </li>
+            <li>
+              <a
+                href={createWhatsAppLink(undefined, siteConfig.secondaryWhatsapp)}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 transition-colors hover:text-foreground"
+              >
+                <svg viewBox="0 0 24 24" className="size-4 fill-accent" aria-hidden="true">
+                  <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.26-1.38a9.9 9.9 0 0 0 4.78 1.22h.01c5.46 0 9.9-4.45 9.9-9.93A9.86 9.86 0 0 0 12.04 2Zm5.8 14.1c-.24.68-1.4 1.3-1.94 1.38-.5.08-1.12.11-1.8-.11a11 11 0 0 1-2-.75 9.2 9.2 0 0 1-3.55-3.5c-.35-.5-1.15-1.85-1.15-3.24 0-1.4.72-2.07.98-2.36.26-.28.55-.35.74-.35h.53c.17 0 .4-.06.62.5.24.6.8 2 .87 2.15.07.15.11.31.02.5-.09.18-.14.29-.28.44-.14.16-.29.35-.42.47-.14.13-.28.28-.12.55.16.28.72 1.19 1.55 1.93 1.07.95 1.97 1.25 2.24 1.4.28.14.44.12.6-.07.17-.2.7-.82.89-1.1.19-.28.37-.23.63-.14.26.1 1.65.78 1.93.92.28.14.47.21.53.33.07.13.07.72-.17 1.4Z" />
+                </svg>
+                {siteConfig.secondaryWhatsappDisplay}
+              </a>
+            </li>
           </ul>
           <div className="mt-5 flex gap-2">
             {socialLinks.map((social) => (
@@ -100,7 +133,7 @@ function Footer() {
       <div className="border-t border-border">
         <div className="mx-auto flex max-w-8xl flex-col gap-2 px-5 py-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:px-8">
           <p>
-            © {year} {siteConfig.name}. All rights reserved.
+            © {year} {siteConfig.brand}. All rights reserved.
           </p>
           <p>{siteConfig.legalNotice}</p>
         </div>

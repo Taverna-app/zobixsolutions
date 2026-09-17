@@ -39,9 +39,9 @@ function WhyWorkWithMe() {
     <section className="py-24 sm:py-28">
       <div className="mx-auto max-w-8xl px-5 sm:px-8">
         <div className="max-w-2xl">
-          <span className="font-mono text-xs tracking-[0.18em] text-accent">WHY WORK WITH ME</span>
+          <span className="font-mono text-xs tracking-[0.18em] text-accent">WHY ZOBIX</span>
           <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight sm:text-4xl">
-            Engineering Judgment, Not Just Code.
+            Why Businesses Choose Zobix.
           </h2>
         </div>
 

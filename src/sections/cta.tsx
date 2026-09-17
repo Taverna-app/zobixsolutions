@@ -19,7 +19,7 @@ function CTA() {
             Have a Business Problem That Software Can Solve?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-            Tell me what you're trying to build, improve or automate. We'll discuss the requirements, technical
+            Tell us what you're trying to build, improve or automate. We'll discuss the requirements, technical
             approach and next steps.
           </p>
 
@@ -33,7 +33,7 @@ function CTA() {
             <Button asChild size="lg" variant="outline">
               <a href={createWhatsAppLink()} target="_blank" rel="noreferrer">
                 <MessageCircle className="size-4" />
-                WhatsApp Me
+                Chat on WhatsApp
               </a>
             </Button>
             <Button asChild size="lg" variant="ghost">

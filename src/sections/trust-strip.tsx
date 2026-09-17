@@ -1,8 +1,8 @@
 const trustSignals = [
-  "4+ Years Professional Experience",
-  "Production Applications",
-  "Web • Mobile • SaaS",
-  "Node.js • React • MySQL",
+  "Custom Software • E-Commerce • POS",
+  "Real, Production-Deployed Systems",
+  "Direct Access to Your Developer",
+  "Karachi, Pakistan",
 ];
 
 function TrustStrip() {
