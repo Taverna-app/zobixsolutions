@@ -333,9 +333,9 @@ src/
 │       ├── kakarot/
 │       ├── quickshoppos/
 │       ├── xavcalling/
-│       ├── playlyne/
+│       ├── playnex/
 │       ├── call-center-ai/
-│       ├── brain-brew/
+│       ├── brain-blend/
 │       ├── wish-by-star/
 │       ├── global-entertainment/
 │       ├── pos/
@@ -591,10 +591,10 @@ Featured projects:
 
 1. Kakarot Online
 2. QuickShopPOS
-3. XavCallingApp
-4. Playlyne
+3. ZobixCallingApp
+4. Playnex
 5. Call Center AI
-6. Brain Brew
+6. Brain Blend
 
 ---
 
@@ -688,7 +688,7 @@ This should feel like a serious SaaS product.
 
 ---
 
-# 18. XAVCALLINGAPP
+# 18. zobixcallingapp
 
 Category:
 
@@ -723,7 +723,7 @@ Present this as a technically interesting real-time communication project.
 
 ---
 
-# 19. PLAYLYNE
+# 19. PLAYNEX
 
 Category:
 

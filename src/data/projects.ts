@@ -70,35 +70,35 @@ const QUICKSHOPPOS_SCREENSHOTS: ProjectScreenshot[] = [
   { src: "/projects/quickshoppos/15-role-permissions.webp", title: "Role Permissions" },
 ];
 
-const XAVCALLINGAPP_SCREENSHOTS: ProjectScreenshot[] = [
-  { src: "/projects/xavcallingapp/01-login.webp", title: "Login" },
-  { src: "/projects/xavcallingapp/02-home.webp", title: "Home" },
-  { src: "/projects/xavcallingapp/03-contacts.webp", title: "Contacts" },
-  { src: "/projects/xavcallingapp/04-chat.webp", title: "Chat" },
-  { src: "/projects/xavcallingapp/05-incoming-call.webp", title: "Incoming Call" },
-  { src: "/projects/xavcallingapp/06-outgoing-call.webp", title: "Outgoing Call" },
-  { src: "/projects/xavcallingapp/07-active-audio-call.webp", title: "Active Audio Call" },
-  { src: "/projects/xavcallingapp/08-active-video-call.webp", title: "Active Video Call" },
-  { src: "/projects/xavcallingapp/09-group-call.webp", title: "Group Call" },
-  { src: "/projects/xavcallingapp/10-call-history.webp", title: "Call History" },
-  { src: "/projects/xavcallingapp/11-profile.webp", title: "Profile" },
-  { src: "/projects/xavcallingapp/12-settings.webp", title: "Settings" },
+const zobixcallingapp_SCREENSHOTS: ProjectScreenshot[] = [
+  { src: "/projects/zobixcallingapp/01-login.webp", title: "Login" },
+  { src: "/projects/zobixcallingapp/02-home.webp", title: "Home" },
+  { src: "/projects/zobixcallingapp/03-contacts.webp", title: "Contacts" },
+  { src: "/projects/zobixcallingapp/04-chat.webp", title: "Chat" },
+  { src: "/projects/zobixcallingapp/05-incoming-call.webp", title: "Incoming Call" },
+  { src: "/projects/zobixcallingapp/06-outgoing-call.webp", title: "Outgoing Call" },
+  { src: "/projects/zobixcallingapp/07-active-audio-call.webp", title: "Active Audio Call" },
+  { src: "/projects/zobixcallingapp/08-active-video-call.webp", title: "Active Video Call" },
+  { src: "/projects/zobixcallingapp/09-group-call.webp", title: "Group Call" },
+  { src: "/projects/zobixcallingapp/10-call-history.webp", title: "Call History" },
+  { src: "/projects/zobixcallingapp/11-profile.webp", title: "Profile" },
+  { src: "/projects/zobixcallingapp/12-settings.webp", title: "Settings" },
 ];
 
-const PLAYLYNE_SCREENSHOTS: ProjectScreenshot[] = [
-  { src: "/projects/playlyne/01-home.webp", title: "Home" },
-  { src: "/projects/playlyne/02-venues.webp", title: "Venues" },
-  { src: "/projects/playlyne/03-venue-detail.webp", title: "Venue Detail" },
-  { src: "/projects/playlyne/04-court-selection.webp", title: "Court Selection" },
-  { src: "/projects/playlyne/05-booking.webp", title: "Booking" },
-  { src: "/projects/playlyne/06-availability.webp", title: "Availability" },
-  { src: "/projects/playlyne/07-payment.webp", title: "Payment" },
-  { src: "/projects/playlyne/08-booking-success.webp", title: "Booking Success" },
-  { src: "/projects/playlyne/09-customer-dashboard.webp", title: "Customer Dashboard" },
-  { src: "/projects/playlyne/10-vendor-dashboard.webp", title: "Vendor Dashboard" },
-  { src: "/projects/playlyne/11-admin-dashboard.webp", title: "Admin Dashboard" },
-  { src: "/projects/playlyne/12-payouts.webp", title: "Payouts" },
-  { src: "/projects/playlyne/13-reviews.webp", title: "Reviews" },
+const PLAYNEX_SCREENSHOTS: ProjectScreenshot[] = [
+  { src: "/projects/playnex/01-home.webp", title: "Home" },
+  { src: "/projects/playnex/02-venues.webp", title: "Venues" },
+  { src: "/projects/playnex/03-venue-detail.webp", title: "Venue Detail" },
+  { src: "/projects/playnex/04-court-selection.webp", title: "Court Selection" },
+  { src: "/projects/playnex/05-booking.webp", title: "Booking" },
+  { src: "/projects/playnex/06-availability.webp", title: "Availability" },
+  { src: "/projects/playnex/07-payment.webp", title: "Payment" },
+  { src: "/projects/playnex/08-booking-success.webp", title: "Booking Success" },
+  { src: "/projects/playnex/09-customer-dashboard.webp", title: "Customer Dashboard" },
+  { src: "/projects/playnex/10-vendor-dashboard.webp", title: "Vendor Dashboard" },
+  { src: "/projects/playnex/11-admin-dashboard.webp", title: "Admin Dashboard" },
+  { src: "/projects/playnex/12-payouts.webp", title: "Payouts" },
+  { src: "/projects/playnex/13-reviews.webp", title: "Reviews" },
 ];
 
 const CALL_CENTER_AI_SCREENSHOTS: ProjectScreenshot[] = [
@@ -117,18 +117,18 @@ const CALL_CENTER_AI_SCREENSHOTS: ProjectScreenshot[] = [
 ];
 
 const BRAIN_BREW_SCREENSHOTS: ProjectScreenshot[] = [
-  { src: "/projects/brain-brew/01-login.webp", title: "Login" },
-  { src: "/projects/brain-brew/02-super-admin.webp", title: "Super Admin" },
-  { src: "/projects/brain-brew/03-company-dashboard.webp", title: "Company Dashboard" },
-  { src: "/projects/brain-brew/04-employees.webp", title: "Employees" },
-  { src: "/projects/brain-brew/05-candidates.webp", title: "Candidates" },
-  { src: "/projects/brain-brew/06-assessments.webp", title: "Assessments" },
-  { src: "/projects/brain-brew/07-assessment-detail.webp", title: "Assessment Detail" },
-  { src: "/projects/brain-brew/08-ai-evaluation.webp", title: "AI Evaluation" },
-  { src: "/projects/brain-brew/09-resume-parsing.webp", title: "Resume Parsing" },
-  { src: "/projects/brain-brew/10-analytics.webp", title: "Analytics" },
-  { src: "/projects/brain-brew/11-subscription.webp", title: "Subscription" },
-  { src: "/projects/brain-brew/12-white-label-settings.webp", title: "White-Label Settings" },
+  { src: "/projects/brain-blend/01-login.webp", title: "Login" },
+  { src: "/projects/brain-blend/02-super-admin.webp", title: "Super Admin" },
+  { src: "/projects/brain-blend/03-company-dashboard.webp", title: "Company Dashboard" },
+  { src: "/projects/brain-blend/04-employees.webp", title: "Employees" },
+  { src: "/projects/brain-blend/05-candidates.webp", title: "Candidates" },
+  { src: "/projects/brain-blend/06-assessments.webp", title: "Assessments" },
+  { src: "/projects/brain-blend/07-assessment-detail.webp", title: "Assessment Detail" },
+  { src: "/projects/brain-blend/08-ai-evaluation.webp", title: "AI Evaluation" },
+  { src: "/projects/brain-blend/09-resume-parsing.webp", title: "Resume Parsing" },
+  { src: "/projects/brain-blend/10-analytics.webp", title: "Analytics" },
+  { src: "/projects/brain-blend/11-subscription.webp", title: "Subscription" },
+  { src: "/projects/brain-blend/12-white-label-settings.webp", title: "White-Label Settings" },
 ];
 
 const WISH_BY_STAR_SCREENSHOTS: ProjectScreenshot[] = [
@@ -271,14 +271,14 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    slug: "xavcallingapp",
-    title: "XavCallingApp",
+    slug: "zobixcallingapp",
+    title: "ZobixCallingApp",
     category: "Real-Time Audio & Video Calling App",
     tags: ["Mobile", "Real-Time"],
     description:
       "React Native calling application with one-to-one and group calls, real-time signaling and full call lifecycle management.",
     detailedDescription:
-      "XavCallingApp is a React Native application built on WebRTC and Socket.IO for real-time one-to-one and group audio/video calls, including invitations, presence and call lifecycle management from ringing through to call end.",
+      "ZobixCallingApp is a React Native application built on WebRTC and Socket.IO for real-time one-to-one and group audio/video calls, including invitations, presence and call lifecycle management from ringing through to call end.",
     role: "Mobile & real-time systems developer — signaling server, call state and client UI.",
     problem:
       "Real-time calling needs reliable signaling and connection handling across unpredictable mobile networks, plus a call experience that feels instant.",
@@ -303,18 +303,18 @@ export const projects: Project[] = [
       "Presence status",
       "Real-time signaling",
     ],
-    screenshots: XAVCALLINGAPP_SCREENSHOTS,
+    screenshots: zobixcallingapp_SCREENSHOTS,
     featured: true,
   },
   {
-    slug: "playlyne",
-    title: "Playlyne",
+    slug: "playnex",
+    title: "Playnex",
     category: "Sports Venue Booking Platform",
     tags: ["Web Apps", "SaaS", "Real-Time"],
     description:
       "Sports venue and court booking platform with real-time availability, multi-role accounts and integrated payments.",
     detailedDescription:
-      "Playlyne connects venue owners with players, handling court booking, real-time availability, vendor payouts and reviews across customer, vendor and admin roles.",
+      "Playnex connects venue owners with players, handling court booking, real-time availability, vendor payouts and reviews across customer, vendor and admin roles.",
     role: "Backend & full-stack developer — booking engine, payments and vendor workflows.",
     problem:
       "Venue booking needs to prevent double-booking in real time while supporting multiple payment methods and giving vendors visibility into payouts.",
@@ -347,7 +347,7 @@ export const projects: Project[] = [
       "SMS notifications",
       "Real-time updates",
     ],
-    screenshots: PLAYLYNE_SCREENSHOTS,
+    screenshots: PLAYNEX_SCREENSHOTS,
     featured: true,
   },
   {
@@ -389,14 +389,14 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    slug: "brain-brew",
-    title: "Brain Brew",
+    slug: "brain-blend",
+    title: "Brain Blend",
     category: "Enterprise HR Assessment & Recruitment SaaS",
     tags: ["SaaS", "AI", "Business Software"],
     description:
       "Multi-tenant HR assessment and recruitment SaaS with AI-assisted candidate evaluation and white-label company cloning.",
     detailedDescription:
-      "Brain Brew is a multi-tenant recruitment and assessment platform serving admins, employees and candidates under one system, with AI-assisted resume parsing and automated scoring, subscription billing and white-label company cloning.",
+      "Brain Blend is a multi-tenant recruitment and assessment platform serving admins, employees and candidates under one system, with AI-assisted resume parsing and automated scoring, subscription billing and white-label company cloning.",
     role: "Backend developer — multi-tenant architecture, assessment engine and billing.",
     problem:
       "Enterprise recruitment teams need to run structured assessments at scale while keeping each client's data and branding isolated.",
